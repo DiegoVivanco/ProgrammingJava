@@ -1,0 +1,19 @@
+package dni;
+
+import java.util.regex.Pattern;
+
+public class MainValidarDni {
+	 
+	    public static void main(String[] args) {
+	        String expresionRegular = "[0-9A-Z][0-9]{7}[A-Z]";
+	        String cadenaAEvaluar = "45610975C";
+	        boolean b = Pattern.matches(expresionRegular,cadenaAEvaluar);
+	        if(b){
+	            System.out.println("La expresion SI representa la cadena a evaluar");
+	        }else{
+	            System.out.println("La expresion NO representa la cadena a evaluar");
+	        }      
+	    }
+	}
+
+

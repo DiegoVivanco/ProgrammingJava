@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vehicles
+  xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation = "Ejemplo1.xsd">
+
+ <vehicle>
+  <nickname>Count Zero</nickname>
+  <model>Series I, 80"</model>
+  <construction>
+   <start>
+    <dom>21</dom>
+    <month>July</month>
+    <year>1949</year>
+   </start>
+   <end>
+    <dom>9</dom>
+    <month>August</month>
+    <year>1949</year>
+   </end>
+  </construction>
+  <mods>
+   <mod>Change Engine</mod>
+   <mod>Change pedals</mod>
+   <mod>Change gearbox</mod>
+   <mod>Fit Rollcage</mod>
+  </mods>
+ </vehicle>
+</vehicles>

@@ -1,0 +1,14 @@
+package org.furious4.oxo.logica;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class OxoTest {
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

@@ -1,0 +1,65 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from Bicipalma WSDL service -->
+
+  <service name="BicipalmaSOAP" provider="java:RPC" style="document" use="literal">
+      <parameter name="wsdlTargetNamespace" value="https://api.mobipalma.mobi/docs/"/>
+      <parameter name="wsdlServiceElement" value="Bicipalma"/>
+      <parameter name="schemaQualified" value="https://api.mobipalma.mobi/docs/"/>
+      <parameter name="wsdlServicePort" value="BicipalmaSOAP"/>
+      <parameter name="className" value="mobi.mobipalma.api.docs.BicipalmaSOAPSkeleton"/>
+      <parameter name="wsdlPortType" value="Bicipalma"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <parameter name="allowedMethods" value="*"/>
+
+      <typeMapping
+        xmlns:ns="https://api.mobipalma.mobi/docs/"
+        qname="ns:Bicicleta"
+        type="java:java.lang.String"
+        serializer="org.apache.axis.encoding.ser.SimpleSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.SimpleDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="https://api.mobipalma.mobi/docs/"
+        qname="ns:>estadoEstacionRequest"
+        type="java:mobi.mobipalma.api.docs.EstadoEstacionRequest"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="https://api.mobipalma.mobi/docs/"
+        qname="ns:Estacion"
+        type="java:mobi.mobipalma.api.docs.Estacion"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+      <arrayMapping
+        xmlns:ns="https://api.mobipalma.mobi/docs/"
+        qname="ns:Anclajes"
+        type="java:java.lang.String[]"
+        innerType="cmp-ns:Bicicleta" xmlns:cmp-ns="https://api.mobipalma.mobi/docs/"
+        encodingStyle=""
+      />
+      <typeMapping
+        xmlns:ns="https://api.mobipalma.mobi/docs/"
+        qname="ns:>estadoEstacionResponse"
+        type="java:mobi.mobipalma.api.docs.EstadoEstacionResponse"
+        serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+        deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+        encodingStyle=""
+      />
+  </service>
+</deployment>

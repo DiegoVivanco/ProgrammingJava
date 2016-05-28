@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- This file was auto-generated from WSDL --><!-- by the Apache Axis2 version: 1.7.1  Built on : Feb 20, 2016 (10:01:29 GMT) --><serviceGroup>
+    <service name="lengthUnit">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="net.webservicex.www.LengthUnitMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">net.webservicex.www.LengthUnitSkeleton</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="ChangeLengthUnit" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http://www.webserviceX.NET/">
+            <actionMapping>\"\"</actionMapping>
+            <outputActionMapping>http://www.webserviceX.NET/lengthUnitHttpGet/ChangeLengthUnitResponse</outputActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

@@ -1,0 +1,24 @@
+package org.furious4.oxo.logica;
+
+import java.util.HashMap;
+import static org.junit.Assert.*;
+
+public class Posiciones {
+	public static final HashMap<Integer,int[]> posicionTablero = new HashMap<Integer,int[]>();
+	
+	static{
+		for (int posicion = 9, fila = 0, columna = 0; posicion >= 0; posicion-- ){
+			posicionTablero.put(posicion,new int[]{fila,columna});
+			columna++;
+			if (columna == 3){
+				columna = 0;
+				fila++;
+			}
+			
+		}
+	};
+	public static int[] filaColumna(Integer posicion) {
+		assertFalse((posicion >= 10) && (posicion <= 0));
+		return (posicionTablero.get(posicion));
+	}
+}

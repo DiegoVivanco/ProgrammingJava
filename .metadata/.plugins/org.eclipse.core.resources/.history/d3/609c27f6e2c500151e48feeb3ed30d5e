@@ -1,0 +1,13 @@
+package dni;
+
+public class MainValidarDni {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ValidarDni validarDni = new ValidarDni();
+		System.out.println(validarDni);
+
+
+	}
+
+}

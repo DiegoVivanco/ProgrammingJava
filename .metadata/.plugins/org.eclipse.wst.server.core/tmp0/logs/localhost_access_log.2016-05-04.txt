@@ -1,0 +1,9 @@
+127.0.0.1 - - [04/May/2016:00:02:02 +0200] "GET / HTTP/1.1" 404 961
+127.0.0.1 - - [04/May/2016:00:02:12 +0200] "GET /SOAPBicipalmModules/services/Bicipalma?wsdl HTTP/1.1" 200 2221
+127.0.0.1 - - [04/May/2016:00:02:12 +0200] "GET /SOAPBicipalmModules/services/Bicipalma?wsdl HTTP/1.1" 200 2221
+127.0.0.1 - - [04/May/2016:00:03:48 +0200] "POST /SOAPBicipalmModules/services/Bicipalma/ HTTP/1.1" 500 390
+127.0.0.1 - - [04/May/2016:00:04:09 +0200] "POST /SOAPBicipalmModules/services/Bicipalma/ HTTP/1.1" 500 390
+127.0.0.1 - - [04/May/2016:00:05:12 +0200] "POST /SOAPBicipalmModules/services/Bicipalma/ HTTP/1.1" 500 390
+127.0.0.1 - - [04/May/2016:00:36:57 +0200] "GET / HTTP/1.1" 404 961
+127.0.0.1 - - [04/May/2016:00:36:59 +0200] "GET /UnitConvertor/services/lengthUnit?wsdl HTTP/1.1" 500 6408
+127.0.0.1 - - [04/May/2016:00:36:59 +0200] "GET /UnitConvertor/services/lengthUnit?wsdl HTTP/1.1" 500 6408

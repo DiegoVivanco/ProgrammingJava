@@ -28,38 +28,50 @@ public class DistanceConverterTest {
 	@Test
 	public void testConvertMeterstoFeet() {
 		meters = 1;
-		feet = 1;
-		fail("Not yet implemented");
+		feets = DistanceConverter.convertMeterstoFeet(meters);
+		assertEquals(3.281,feets,0.001);
 	}
-
+	
 	@Test
 	public void testConvertFeettoInches() {
-		fail("Not yet implemented");
+		feets = 1;
+		inches = DistanceConverter.convertFeettoInches(feets);
+		assertEquals(12,inches,0.001);
 	}
 
 	@Test
 	public void testConvertInchestoFeet() {
-		fail("Not yet implemented");
+		inches = 12;
+		feets = DistanceConverter.convertInchestoFeet(inches);
+		assertEquals(1,feets,0.001);
 	}
-
+	
 	@Test
 	public void testConvertCmtoFeet() {
-		fail("Not yet implemented");
+		cm = 10;
+		feets = DistanceConverter.convertCmtoFeet(cm);
+		assertEquals(0.3281,feets,0.001);
 	}
 
 	@Test
 	public void testConvertFeettoCm() {
-		fail("Not yet implemented");
+		feets = 1;
+		cm = DistanceConverter.convertFeettoCm(feets);
+		assertEquals(30.48,cm,0.001);
 	}
-
+	
 	@Test
 	public void testConvertCmtoInches() {
-		fail("Not yet implemented");
+		cm = 10;
+		inches = DistanceConverter.convertCmtoInches(cm);
+		assertEquals(3.9371,inches,0.001);
 	}
-
+	
 	@Test
 	public void testConvertInchestoCm() {
-		fail("Not yet implemented");
+		inches = 10;
+		cm = DistanceConverter.convertInchestoCm(inches);
+		assertEquals(25.4,cm,0.001);
 	}
 
 }

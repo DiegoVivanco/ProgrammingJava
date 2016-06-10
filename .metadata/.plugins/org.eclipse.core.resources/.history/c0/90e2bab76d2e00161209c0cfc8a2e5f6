@@ -1,0 +1,31 @@
+package JunitTest;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import PatrónComposite.CompuestoItem;
+import PatrónComposite.SimpleItem;
+
+public class ItemTest {
+
+	@Test
+	public void testGetNombre() {
+		SimpleItem nombre = new SimpleItem("nombre");
+		CompuestoItem nombre2 = new CompuestoItem("nombre");
+		assertEquals(nombre.getNombre(), nombre2.getNombre());
+
+	}
+	@Test
+	public void testAnhadir(){
+		SimpleItem nombre = new SimpleItem("nombre");
+		SimpleItem nombreAnhadido = new SimpleItem("nombreAnhadido");
+		nombre.anhadir(nombreAnhadido);
+		
+		CompuestoItem nombre2 = new CompuestoItem("nombre");
+		CompuestoItem nombreAnhadido2 = new CompuestoItem("nombreAnhadido");
+		nombre2.anhadir(nombreAnhadido2);
+		assetEquals(nombre.anhadir(nombreAnhadido), nombre2.anhadir(nombreAnhadido2) );
+	}
+
+}

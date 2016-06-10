@@ -1,0 +1,159 @@
+package composite;
+
+import java.util.ArrayList;
+
+import Patr�nComposite.Item;
+
+public class Main_test {
+
+	public static void main(String[] args) {
+		/*     Employee CEO = new Employee("John","CEO", 30000);
+
+      Employee headSales = new Employee("Robert","Head Sales", 20000);
+
+      Employee headMarketing = new Employee("Michel","Head Marketing", 20000);
+
+      Employee clerk1 = new Employee("Laura","Marketing", 10000);
+      Employee clerk2 = new Employee("Bob","Marketing", 10000);
+
+      Employee salesExecutive1 = new Employee("Richard","Sales", 10000);
+      Employee salesExecutive2 = new Employee("Rob","Sales", 10000);
+
+      CEO.add(headSales);
+      CEO.add(headMarketing);
+
+      headSales.add(salesExecutive1);
+      headSales.add(salesExecutive2);
+
+      headMarketing.add(clerk1);
+      headMarketing.add(clerk2);
+
+      //print all employees of the organization
+      System.out.println(CEO); 
+      
+      for (Employee headEmployee : CEO.getSubordinates()) {
+         System.out.println(headEmployee);
+         
+         for (Employee employee : headEmployee.getSubordinates()) {
+            System.out.println(employee);
+         }*/
+		// crear item simple y testear su nombre
+		
+		System.out.println("\n *** crear item simple y testear su nombre *** \n");
+		Item simple = new Item("Lakers");
+		System.out.println("Equipo: " + simple.getNombre());
+		 	// metodo getNombre());
+		
+		
+		// crear item compuesto y testear su nombre
+		System.out.println("\n *** crear item compuesto y testear su nombre *** \n");
+		Item compuesto = new Item("pacific");
+		System.out.println("Division: " + compuesto.getNombre());
+
+			// metodo getNombre());
+		
+		
+		// añadir item simple a compuesto y comprobar nombre
+		
+		System.out.println("\n *** añadir item simple a compuesto y comprobar nombre *** \n");
+		/*Item simpleDos = new Item("Lakers");
+		simpleDos.anhadir(compuesto);
+		/*System.out.println("Equipo: " + simpleDos.getNombre());*/
+
+			// metodo anhadir(equipo);		
+
+		
+		//  recorrer un item compuesto mostrando su nombre y el de sus hijos: 1 hijo, profundidad 1
+		
+		System.out.println("\n *** recorrer un item compuesto mostrando su nombre y el de sus hijos: 1 hijo, profundidad 1 *** \n");
+		
+			Item item = new Item("Pacific");
+			Item elemento = new Item("Lakers");
+			item.anhadir(elemento);
+			System.out.println("Pacific");
+			item.iterable();
+		
+			/*for (Item datos : item.getHijos()) {
+				System.out.println(datos);
+	         }*/
+		
+		// añadir varios hijos desde array de strings y recorrer un item compuesto mostrando su nombre y el de sus hijos: n hijos, profundidad 1
+		
+		System.out.println("\n ***añadir varios hijos desde array de strings y recorrer un item compuesto mostrando su nombre y el de sus hijos: n hijos, profundidad 1 *** \n");
+		
+			// crear division "Atlantic"
+		
+			String[] equiposAtlantic = {"Celtics", "Nets", "Knicks", "76ers", "Raptors"};
+			Item items = new Item("Atlantic");
+			Item elementos = new Item("Celtics");
+			Item elementos1 = new Item("Nets");
+			Item elementos2 = new Item("Knicks");
+			Item elementos3 = new Item("76ers");
+			Item elementos4 = new Item("Raptors");
+			items.anhadir(elementos);
+			items.anhadir(elementos1);
+			items.anhadir(elementos2);
+			items.anhadir(elementos3);
+			items.anhadir(elementos4);
+
+			System.out.println("Atlantic");
+			items.iterable();
+			
+	
+		
+		// recorrer un item compuesto por otros compuestos, mostrando su nombre y el de sus hijos: n hijos, profundidad n 
+		
+		System.out.println("\n *** recorrer un item compuesto por otros compuestos, mostrando su nombre y el de sus hijos: n hijos, profundidad n *** \n");
+		
+			// crear liga "nba" 
+			// crear conferencia Este 
+		
+		
+		// crear un elemento compuesto de simples a partir de un array de strings
+		
+		System.out.println("\n *** crear un elemento compuesto de simples a partir de un array de strings *** \n");
+		
+		String[] equiposCentral = {"Bulls", "Cavs", "Pistons", "Pacers", "Bucks"};
+		
+			// Crear division Central
+		
+			// método composite()
+		
+		
+		// crear un elemento compuesto de elementos compuestos a partir de un array de objetos simples
+
+		System.out.println("\n *** crear un elemento compuesto de elementos compuestos a partir de un array de objetos simples *** \n");
+		
+		String[] equiposSouthEast = {"Heat", "Hawks", "Hornets", "Wizzards", "Magic"};
+		
+			// crear un arraylist de equipos SouthEast
+		
+			// crear division SouthEast y añadir los equipos SouthEast
+		
+			// añadir division SouthEast
+		
+		
+		// crear un elemento compuesto de elementos compuestos a partir de un array de objetos compuestos
+		
+		System.out.println("\n *** crear un elemento compuesto de elementos compuestos a partir de un array de objetos compuestos *** \n");
+		
+			// crear un ArrayList de divisiones
+		
+			// añadirlas a la conferencia este
+		
+		
+		
+		// eliminar un hijo entre varios, profundidad 1
+		
+		System.out.println("\n *** eliminar un hijo a profundidad n *** \n");
+
+				// quitar la division Atlantic
+				// metodo quitar("Atlantic");	 se busca por el nombre de la división, no por el objeto.		
+		
+		
+		// Crea la conferencia Oeste completa y añadela a la liga; muestra por pantalla la liga completa
+		
+		System.out.println("\n *** Liga NBA completa con sus conferencias, divisiones y equipos *** \n");
+
+	}
+}

@@ -1,0 +1,12 @@
+package PatrónComposite;
+
+public class SimpleItem {
+	
+	public SimpleItem(){
+		
+	}
+	public SimpleItem(String item){
+		
+	}
+
+}

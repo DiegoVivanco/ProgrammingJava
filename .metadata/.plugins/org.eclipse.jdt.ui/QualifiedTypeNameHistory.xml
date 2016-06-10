@@ -17,7 +17,6 @@
 <fullyQualifiedTypeName name="Interface.Walkable"/>
 <fullyQualifiedTypeName name="Animal.Person"/>
 <fullyQualifiedTypeName name="Animal.Duck"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="javax.swing.JFrame"/>
 <fullyQualifiedTypeName name="javax.swing.JPanel"/>
 <fullyQualifiedTypeName name="javax.swing.JLabel"/>
@@ -29,4 +28,9 @@
 <fullyQualifiedTypeName name="org.furious4.oxo.logica.Ficha"/>
 <fullyQualifiedTypeName name="org.furious4.oxo.logica.Oxo"/>
 <fullyQualifiedTypeName name="org.junit.Before"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="PatrónComposite.Item"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="PatrónComposite.SimpleItem"/>
+<fullyQualifiedTypeName name="PatrónComposite.CompuestoItem"/>
 </qualifiedTypeNameHistroy>

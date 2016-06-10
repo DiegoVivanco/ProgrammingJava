@@ -1,0 +1,21 @@
+package JunitTest;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+import PatrónComposite.CompuestoItem;
+import PatrónComposite.SimpleItem;
+
+public class ItemTest {
+
+	@Test
+	public void testGetNombre() {
+		SimpleItem nombre = new SimpleItem("nombre");
+		CompuestoItem nombre2 = new CompuestoItem("nombre");
+		assertEquals(nombre.getNombre(), nombre2.getNombre());
+
+	}
+	
+
+}

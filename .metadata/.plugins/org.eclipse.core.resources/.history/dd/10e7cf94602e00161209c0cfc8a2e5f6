@@ -1,0 +1,6 @@
+package PatrónComposite;
+
+public interface Componible {
+	public void composite(String List);
+
+}

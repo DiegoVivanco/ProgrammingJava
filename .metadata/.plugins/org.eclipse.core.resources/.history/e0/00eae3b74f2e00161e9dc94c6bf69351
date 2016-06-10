@@ -1,0 +1,7 @@
+package PatrónComposite;
+
+public class SimpleItem {
+	
+	SimpleItem(){}
+
+}

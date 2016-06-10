@@ -1,0 +1,11 @@
+package PatrónComposite;
+
+public class CompuestoItem extends Item{
+	public CompuestoItem(){
+		
+	}
+	public CompuestoItem(String compuestoItem){
+		
+	}
+
+}

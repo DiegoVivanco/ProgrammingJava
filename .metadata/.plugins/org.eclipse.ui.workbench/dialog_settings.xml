@@ -38,10 +38,14 @@
 			<item value="org.eclipse.ui.Basic"/>
 		</list>
 	</section>
+	<section name="ZipFileImportWizard">
+	</section>
 	<section name="FileSystemImportWizard">
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID"/>
 		<item value="false" key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="C:\Users\DIEGO VIVANCO\Downloads\SEAS_Patron_Composite"/>
+			<item value="C:\Users\DIEGO VIVANCO\Desktop\Examen Junio Dual 2015-16"/>
 			<item value="C:\Users\DIEGO VIVANCO\Desktop\FP_Dual\8.- Programacion\ProgramacioJava\org.furious4.oxo"/>
 			<item value="C:\Users\DIEGO VIVANCO\Desktop\POODAM\Valls ExamenGestorMultas"/>
 			<item value="C:\Users\DIEGO VIVANCO\Desktop\POODAM\EquipoDeFutbol"/>

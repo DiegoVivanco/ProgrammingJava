@@ -1,0 +1,14 @@
+package PatrónComposite;
+
+public class SimpleItem extends Item{
+	
+	public SimpleItem(){
+		
+	}
+	public SimpleItem(String simpleItem){
+		super();
+		
+	}
+	
+
+}

@@ -68,54 +68,62 @@ public class BMICalculator {
 		}
 		// estilo de los componentes
 	
-		private JLabel makePrettyLabel(String title) {
-			JLabel label = new JLabel(title);
-			label.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 14));
-			label.setForeground(new Color(53, 124, 255));
-			return label;
-			}
+	private JLabel makePrettyLabel(String title) {
+		JLabel label = new JLabel(title);
+		label.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 14));
+		label.setForeground(new Color(53, 124, 255));
+		return label;
+	}
 	
-		private JButton makePrettyButton(String title) {
-			JButton button = new JButton(title);
-			button.setFont(new Font(Font.SANS_SERIF, Font.PLAIN, 16));
-			button.setBorder(BorderFactory.createRaisedBevelBorder());
-			button.setBackground(Color.white);
-			button.setForeground(new Color(53, 124, 255));
-			return button;
-			}
+	private JButton makePrettyButton(String title) {
+		JButton button = new JButton(title);
+		button.setFont(new Font(Font.SANS_SERIF, Font.PLAIN, 16));
+		button.setBorder(BorderFactory.createRaisedBevelBorder());
+		button.setBackground(Color.white);
+		button.setForeground(new Color(53, 124, 255));
+		return button;
+		}
 		
-		private JTextField makePrettyTextField() {
-			JTextField field = new JTextField();
-			field.setFont(new Font(Font.SANS_SERIF, Font.ITALIC, 14));
-			field.setHorizontalAlignment(JTextField.RIGHT);
-			field.setBorder(BorderFactory.createLoweredBevelBorder());
-			return field;
+	private JTextField makePrettyTextField() {
+		JTextField field = new JTextField();
+		field.setFont(new Font(Font.SANS_SERIF, Font.ITALIC, 14));
+		field.setHorizontalAlignment(JTextField.RIGHT);
+		field.setBorder(BorderFactory.createLoweredBevelBorder());
+		return field;
 		}
 		
 		
-		// Add BMI calculation
-		btnCalc.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent arg0) {
-				double mass;
-				double height;
-					try {
-						mass = Double.parseDouble(txtMass.getText());
-						height = Double.parseDouble(txtHeight.getText());
-					} catch (NumberFormatException e) {
-						JOptionPane.showMessageDialog(self,
-								"Please enter a valid number for mass and height.",
-								"Input error",
-								JOptionPane.ERROR_MESSAGE);
-						return;
-					}
-					double result = calculateBMI(mass, height);
+	// Add BMI calculation
+	btnCalc.addActionListener(new ActionListener() {
+		@Override
+		public void actionPerformed(ActionEvent arg0) {
+			double mass;
+			double height;
+				try {
+					mass = Double.parseDouble(txtMass.getText());
+					height = Double.parseDouble(txtHeight.getText());
+				} catch (NumberFormatException e) {
 					JOptionPane.showMessageDialog(self,
-							"Your BMI is: " + (Math.round(result*100.0)/100.0),
-							"Your BMI result",
-							JOptionPane.PLAIN_MESSAGE);
-					}
-					});
+							"Please enter a valid number for mass and height.",
+							"Input error",
+							JOptionPane.ERROR_MESSAGE);
+					return;
+				}
+				double result = calculateBMI(mass, height);
+				JOptionPane.showMessageDialog(self,
+						"Your BMI is: " + (Math.round(result*100.0)/100.0),
+						"Your BMI result",
+						JOptionPane.PLAIN_MESSAGE);
+				}
+				});
+	}
 
-}
-}
+	public static void main(String[] args) {
+		SwingUtilities.invokeLater(new Runnable() {
+			public void run() {
+				new BMICalculator();
+			}
+		});
+	}
+	}
+

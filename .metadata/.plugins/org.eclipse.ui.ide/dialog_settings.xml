@@ -5,6 +5,7 @@
 		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
 		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\DIEGO VIVANCO\Desktop\FP_Dual\8.- Programacion\ProgramacioJava\EjerciciosJava\BiciPalma"/>
 			<item value="C:\Users\DIEGO VIVANCO\Desktop\ProgramacioJava\org.furious4.oxo"/>
 			<item value="C:\Users\DIEGO VIVANCO\Desktop\últimopaso\POO-master\Java\validadorFechas"/>
 		</list>
@@ -28,5 +29,12 @@
 		<item value="194" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="BasicNewProjectResourceWizard">
+	</section>
+	<section name="SaveAsDialogSettings">
+		<item value="525" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="580" key="DIALOG_HEIGHT"/>
+		<item value="546" key="DIALOG_X_ORIGIN"/>
+		<item value="52" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>
